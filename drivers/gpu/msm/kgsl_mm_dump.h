@@ -1,4 +1,5 @@
-/* Copyright (c) 2019, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2002,2007-2017, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2019 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -8,14 +9,15 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
+ *
  */
+#ifndef __KGSL_MM_DUMP_H
+#define __KGSL_MM_DUMP_H
 
-#ifndef _CAM_IR_LED_SOC_H_
-#define _CAM_IR_LED_SOC_H_
+#include "kgsl_device.h"
 
-#include "cam_ir_led_dev.h"
+void kgsl_dump_memory_entry(struct kgsl_process_private *private);
+void kgsl_dump_mmap(struct kgsl_process_private *private);
 
-int cam_ir_led_get_dt_data(struct cam_ir_led_ctrl *fctrl,
-	struct cam_hw_soc_info *soc_info);
 
-#endif /*_CAM_IR_LED_SOC_H_*/
+#endif /* __KGSL_MM_DUMP_H */
